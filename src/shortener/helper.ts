@@ -7,6 +7,7 @@ import useragent from "useragent";
 
 export default class ShortenerHelper extends ShortenerDb {
   protected buildShortUrlCode = (shortenObj: IBuildShortUrl): string => {
+    // max 3.5 trillion
     const { length } = shortenObj;
     const characters =
       "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
@@ -72,7 +73,6 @@ export default class ShortenerHelper extends ShortenerDb {
 
   protected fetchCountryCode = async (ip: string) => {
     const geo = geoip.lookup(ip);
-    console.log("geo: ", geo);
     return geo?.country ?? "";
   };
 

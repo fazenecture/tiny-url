@@ -72,11 +72,6 @@ export default class ShortenerService extends ShortenerHelper {
       click_time: moment().format(),
     };
 
-    // await Promise.all([
-    //   this.insertClickTrackingQuery(clickTrackingObj),
-    //   this.updateShortUrlClickCountQuery(short_url_id),
-    // ]);
-
     producer.addTask({
       type: QueueMessageType.CLICK_TRACKING,
       payload: clickTrackingObj,
