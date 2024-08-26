@@ -1,6 +1,6 @@
 # URL Shortening Service (VivekBaskHealth)
 
-This project is a URL Shortening Service, similar to popular services like Bit.ly. It allows users to create short URLs that redirect to longer, original URLs. The service is built with Node.js, TypeScript, and MySQL, leveraging best practices for scalability, performance, and security.
+This project is a URL Shortening Service, similar to popular services like Bit.ly. It allows users to create short URLs that redirect to longer, original URLs. The service is built with Node.js, TypeScript, and MySQL, leveraging best practices for scalability, performance, and security. [Link to Explainer Video](https://drive.google.com/file/d/1UqV_NStdKaCQ2FFsdokZJJqPFoO9T3Qz/view?usp=sharing)
 
 ## Table of Contents
 
